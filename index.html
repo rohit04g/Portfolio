@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>G ROHIT</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#mywork">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" id="openmenu"></i>
+            </nav>
+            <div class="header-text">
+                <h2>HELLO, <br> I'M G ROHIT</h2>
+                <p>Web <span>Developer</span></p>
+                <div class="img" id="profile-img">
+                    
+                </div>
+              <div class="social-media">
+                <a href="https://www.linkedin.com/in/g-rohit-9476bb2b6/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/rohit04g"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/9100630198"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/the.__.2003__/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div>
+                <button class="resume"><a href="Rohit_WebDeveloper.pdf">Download CV</a></button>
+              </div>
+              
+
+            </div>
+        </div>
+
+    </div>
+    <!-- About me page ///////////////////////////////////////////////////-->
+    
+        <div class="aboutme-content">
+            <div id="aboutme">
+            <h1>ABOUT ME</h1>
+            <p>Hello Everyone, I am Rohit from Hyderabad currently pursuing Btech in MLR Institute Of Technology,I am a passionate web developer with a strong foundation in creating dynamic and responsive websites. With expertise in HTML, CSS, JavaScript, and various modern frameworks, I bring a creative and technical edge to every project. My goal is to build user-friendly and visually appealing web applications that deliver exceptional user experiences. I thrive in collaborative environments, constantly seeking to learn new technologies and improve my skills. Whether working on front-end design or back-end development, I am committed to writing clean, efficient code and staying updated with the latest industry trends.</p>
+            <div class="tab-titles ">
+                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>BOOTSTRAP</li>
+                    <li>REACT</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <h3>B TECH</h3>
+                <p>Artifical Intelligence And Machine Learning From MLR Institute Of Technology <br> Gandimaisamma,Dundigal | 2022-2025</p>
+                <h3>INTERMEDIATE</h3>
+                <p>MPC From Bhavans Sri Aurobindo Junior College <br> Neredmet,Sainikpuri | 2019-2022</p>
+                <h3>SCHOOL</h3>
+                <p>SCC From BRJC Parsi High School <br> Secunderabad | 2019</p>
+            </div>
+        </div>
+     </div>
+     <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+
+     <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+     </script>
+     <!-- mywork///////////////////////////////////////////////////////// -->
+     
+        <div class="mywork-content">
+            <div id="mywork">
+            <h1>MY WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png" alt="">
+                    <div class="layer">
+                        <h4>Spotify Clone</h4>
+                        <p>A leading music streaming platform offering a vast library of songs, podcasts, and personalized playlists</p>
+                        <a href="https://spiffy-salamander-fd4e09.netlify.app/"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.webp" id="work2" style="background-color: rgb(48, 46, 46);">
+                    <div class="layer">
+                        <h4>School Website</h4>
+                        <p>Created a school website which is fully responsive for mobile version using HTML,CSS,JS</p>
+                        <a href="https://luxury-arithmetic-967bdb.netlify.app/"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.webp" id="work3" style="background-color: rgba(128, 128, 128, 0.765);">
+                    <div class="layer">
+                        <h4>Calculator</h4>
+                        <p>Created a simple calculator for calculations using HTML,CSS,JS</p>
+                        <a href="https://splendorous-kitten-1b1c86.netlify.app/"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+<!-- certification page ///////////////////////////////////-->
+
+
+     </div>
+     <div class="Mywork">
+        <div class="mywork-content">
+            <h1 id="cert">MY CERTIFICATIONS</h1>
+            <div class="work-list">
+                <div class="work" id=>
+                    <img src="nptel3.jpg" alt="">
+                    <div class="layer">
+                        <h4>Certified by NPTEL</h4>
+                        <p>I have successfully completed the "Internet of Things" course by National Program on Technology Enhanced Learning</p>
+                        <a href="Introduction To Internet Of Things.pdf"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="gl img.jpeg" id="work2" style="background-color: rgb(48, 46, 46);">
+                    <div class="layer">
+                        <h4>Certified by GreatLearning</h4>
+                        <p>I have successfully completed the "Front End Development" course by GreatLearning</p>
+                        <a href="gl course.pdf"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="codsoft.jpeg" id="work3" style="background-color: rgba(128, 128, 128, 0.765);">
+                    <div class="layer">
+                        <h4>Certified By CodSoft</h4>
+                        <p>Certified on Completing a Virtual Internship on "Web Development" by CodSoft</p>
+                        <a href="#"><i class="fa-solid fa-share-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+     </div>
+     <!-- contact page/////////////////////////////////////////////// -->
+
+
+    <div id="contact">
+        <div class="contact-content">
+            <h1>CONTACT ME</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p > <i class="fa-regular fa-envelope"></i> rgouthimukul@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 9100630198</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/g-rohit-9476bb2b6/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rohit04g"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/9100630198"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/the.__.2003__/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact_right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="E-Mail" placeholder="Your E-Mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © CopyRight   G Rohit   2024</p>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyzxyqOeL9aUbK6RqajQcZtvrSXE89ekyd-TOt9ZsoAQMXimlmu79xHamH6t0plxr4DUA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+    
+</html>
